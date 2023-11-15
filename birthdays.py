@@ -1,3 +1,7 @@
+'''
+the goal of the module is to define the functon to create a dictionary and undertand 
+'''
+
 birthdays = {
     'Albert Einstein': '03/14/1879',
     'Benjamin Franklin': '01/17/1706',
@@ -6,11 +10,13 @@ birthdays = {
     'Rowan Atkinson': '01/6/1955'}
 
 def print_birthdays():
+    ''' function which returns the name of the celebrities present in the variable birthdays '''
     print('Welcome to the birthday dictionary. We know the birthdays of these people:')
     for name in birthdays:
         print(name)
 
 def return_birthday(name):
+    ''' function which returns the name and the correspnding name '''
     if name in birthdays:
         print('{}\'s birthday is {}.'.format(name, birthdays[name]))
     else:
